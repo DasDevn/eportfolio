@@ -1,0 +1,97 @@
+@charset "utf-8",
+
+
+
+
+
+
+.reHeading { grid-area: header; }
+.reAbout { grid-area: menu; }
+.reEducation { grid-area: main; }
+.reExpertise { grid-area: right; }
+.reExperience { grid-area: footer; }
+.reC@charset "utf-8";
+/*
+Author: Devan Eisnor
+Date: 2/16/2023
+Description: Layout design mainly for the resume page
+*/
+
+.reHeading { grid-area: reHeading; }
+.reHeading h4{
+  font-weight: normal;  
+}
+.reContactInfo { grid-area: reContactInfo; }
+.reContactInfo li{
+  font-size: .8em;
+}
+.reContactInfo ul{
+  padding-top: 20%;
+}
+
+
+.reAbout { grid-area: reAbout; }
+.reEducation { grid-area: reEducation; }
+.reExpertise { grid-area: reExpertise; }
+.reExperience { grid-area: reExperience; }
+.reCertification { grid-area: reCertification; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'reHeading reHeading reContactInfo'
+    'reAbout reAbout reAbout'
+    'reEducation reEducation reExpertise'
+    'reExperience reExperience reCertification';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  font-family: 'Hanken Grotesk';
+  width: 80%;
+  margin-left: 10%;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+  border-bottom: 1px solid #666666;
+  width: 90%;
+  margin-left: 5%;
+}ertification { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'reHeading reHeading reHeading'
+    'reAbout reAbout reAbout'
+    'reEducation reEducation reEducation'
+    'reExperience reExperience reEducation';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
