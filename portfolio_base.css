@@ -1,83 +1,109 @@
 @charset "utf-8";
-/*
-Author: Devan Eisnor
-Date: 2/16/2023
-Description: Portfolio Base CSS
-*/
+
+/* Author: Devan Eisnor */
+/* Date: 2/16/2023 */
+/* Description: Portfolio Base CSS */
+
+body,
+html {
+  height: 100%;
+}
 
 body {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+p {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 p {
-  color: white;
-  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
 #hamnav {
-    width: 100%;
-    background: #000;
-  }
-  
-  /* (B) HORIZONTAL MENU ITEMS */
-  #hamitems { display: flex; }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+}
+
+/* ALL HAMBURGER MENU STYLES */
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+
+#hamitems a {
+  font-family: 'Courier New', Courier, monospace;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+#hamitems a:hover {
+  background: transparent;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
   #hamitems a {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
     color: white;
-    text-decoration: none;
-    text-align: center; 
-  }
-  #hamitems a:hover { background: black; }
-  
-  /* (C) HIDE HAMBURGER */
-  #hamnav label, #hamburger { display: none; }
-
-  /* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px){
-    /* (A) BREAK INTO VERTICAL MENU */
-    #hamitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-     
-      text-align: left;
-    }
-   
-    /* (B) SHOW HAMBURGER ICON */
-    #hamnav label { 
-      display: inline-block; 
-      color: black;
-      background: white;
-      font-style: normal;
-      font-size: 1.2em;
-      padding: 10px;
-    }
-  
-    /* (C) TOGGLE SHOW/HIDE MENU */
-    #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
+    background: transparent;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
   }
 
-  .flex-container {
-    display: flex;
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
   }
 
-  @media only screen and (max-width: 768px) {
-    /*mobile phone*/
-   
-    }
-    
-    @media only screen and (min-width: 769px) {
-    /*tablet phone*/
-    
-   
-    }
-    
-    @media only screen and (min-width: 1024px) {
-    /*desktop*/
-    
-    }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+
+  /* MOBILE PHONE */
+  h1 {
+    padding-top: 50%;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: .8em;
+    padding: 50px;
+    padding-top: 0;
+  }
+}
+
 
