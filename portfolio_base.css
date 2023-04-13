@@ -1,109 +1,64 @@
-@charset "utf-8";
-
-/* Author: Devan Eisnor */
-/* Date: 2/16/2023 */
-/* Description: Portfolio Base CSS */
-
-body,
-html {
-  height: 100%;
-}
-
-body {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h1,
-p {
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-}
-
-p {
-  padding-left: 100px;
-  padding-right: 100px;
-}
+body {background-color: coral;}
 
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
 #hamnav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: black;
+    width: 100%;
+    background: #000;
 }
 
-/* ALL HAMBURGER MENU STYLES */
 /* (B) HORIZONTAL MENU ITEMS */
-#hamitems {
-  display: flex;
-}
-
+#hamitems { display: flex; }
 #hamitems a {
-  font-family: 'Courier New', Courier, monospace;
-  flex-grow: 1;
-  flex-basis: 0;
-  padding: 5px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
-
-#hamitems a:hover {
-  background: transparent;
-}
+#hamitems a:hover { background: #af0d0d; }
 
 /* (C) HIDE HAMBURGER */
-#hamnav label,
-#hamburger {
-  display: none;
-}
+#hamnav label, #hamburger { display: none; }
 
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px) {
-  /* (A) BREAK INTO VERTICAL MENU */
-  #hamitems a {
-    font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
 
-  /* (B) SHOW HAMBURGER ICON */
-  #hamnav label {
-    display: inline-block;
-    color: white;
-    background: transparent;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
 
-  /* (C) TOGGLE SHOW/HIDE MENU */
-  #hamitems {
-    display: none;
-  }
-
-  #hamnav input:checked ~ #hamitems {
-    display: block;
-  }
-
-  /* MOBILE PHONE */
-  h1 {
-    padding-top: 50%;
-    font-size: 20px;
-  }
-
-  p {
-    font-size: .8em;
-    padding: 50px;
-    padding-top: 0;
-  }
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
 }
 
+.flex-container {
+    display: flex;
+}
 
+@media only screen and (max-width: 768px) {
+    /*mobile phone*/
+}
+
+@media only screen and (min-width: 769px) {
+    /*tablet phone*/
+}
+
+@media only screen and (min-width: 1024px) {
+    /*desktop*/
+}
