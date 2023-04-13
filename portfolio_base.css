@@ -1,10 +1,29 @@
-body {background-color: coral;}
+body {
+  background-color: black;
+}
+
+h1{
+  color: white;
+  text-align: left;
+  font-family:'Courier New', Courier, monospace;
+  padding-top: 10%;
+  padding-left: 8%;
+}
+
+p{
+  color: white;
+  text-align: left;
+  padding-left: 8%;
+  padding-right: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
 
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
 #hamnav {
     width: 100%;
-    background: #000;
+    background: transparent;
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
@@ -17,7 +36,7 @@ body {background-color: coral;}
     text-decoration: none;
     text-align: center;
 }
-#hamitems a:hover { background: #af0d0d; }
+#hamitems a:hover { background: transparent; }
 
 /* (C) HIDE HAMBURGER */
 #hamnav label, #hamburger { display: none; }
@@ -29,14 +48,15 @@ body {background-color: coral;}
       box-sizing: border-box;
       display: block;
       width: 100%;
-      border-top: 1px solid #333;
+      text-align: left;
+      
     }
 
     /* (B) SHOW HAMBURGER ICON */
     #hamnav label { 
       display: inline-block; 
       color: white;
-      background: #a02620;
+      background: transparent;
       font-style: normal;
       font-size: 1.2em;
       padding: 10px;
@@ -51,14 +71,3 @@ body {background-color: coral;}
     display: flex;
 }
 
-@media only screen and (max-width: 768px) {
-    /*mobile phone*/
-}
-
-@media only screen and (min-width: 769px) {
-    /*tablet phone*/
-}
-
-@media only screen and (min-width: 1024px) {
-    /*desktop*/
-}
