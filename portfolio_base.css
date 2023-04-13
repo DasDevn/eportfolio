@@ -5,8 +5,14 @@ Date: 2/16/2023
 Description: Portfolio Base CSS
 */
 
-body {background-color: coral;}
+body {
+  background-color: black;
+}
 
+p {
+  color: white;
+  text-align: center;
+}
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
 #hamnav {
@@ -22,9 +28,9 @@ body {background-color: coral;}
     padding: 10px;
     color: white;
     text-decoration: none;
-    text-align: center;
+    text-align: center; 
   }
-  #hamitems a:hover { background: #af0d0d; }
+  #hamitems a:hover { background: black; }
   
   /* (C) HIDE HAMBURGER */
   #hamnav label, #hamburger { display: none; }
@@ -36,14 +42,15 @@ body {background-color: coral;}
       box-sizing: border-box;
       display: block;
       width: 100%;
-      border-top: 1px solid #333;
+     
+      text-align: left;
     }
    
     /* (B) SHOW HAMBURGER ICON */
     #hamnav label { 
       display: inline-block; 
-      color: white;
-      background: #a02620;
+      color: black;
+      background: white;
       font-style: normal;
       font-size: 1.2em;
       padding: 10px;
@@ -60,14 +67,13 @@ body {background-color: coral;}
 
   @media only screen and (max-width: 768px) {
     /*mobile phone*/
-  
+   
     }
     
     @media only screen and (min-width: 769px) {
     /*tablet phone*/
     
-  
-    
+   
     }
     
     @media only screen and (min-width: 1024px) {
