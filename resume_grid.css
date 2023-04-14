@@ -1,3 +1,10 @@
+@charset "UTF-8";
+
+/*
+Name: Devan Eisnor
+Date: 2023-04-14
+CSS file that used to style resume.html in grid containers along with styles inside
+*/
 .reHeading { grid-area: header; }
 .reAbout { grid-area: menu; }
 .reEducation { grid-area: main; }

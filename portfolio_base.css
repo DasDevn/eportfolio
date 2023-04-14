@@ -1,3 +1,11 @@
+@charset "UTF-8";
+
+/*
+Name: Devan Eisnor
+Date: 2023-04-14
+CSS file that used for style of webpages and creates
+proper window readability while using desktop, tablet, or cell phone screen
+*/
 body {
   background-color: #F5F5DC;
   
@@ -23,11 +31,11 @@ p, h4{
 li{
   color:#228B22;
   font-family: 'Courier New', Courier, monospace;
-
+  font-size: .7em;
 }
 .indented {
   text-indent: 2em;
-
+  font-size: .6em
 }
 
 .border-content {
