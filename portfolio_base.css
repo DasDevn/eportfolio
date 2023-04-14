@@ -20,6 +20,16 @@ p, h4{
   
 }
 
+li{
+  color:#228B22;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.indented {
+  text-indent: 2em;
+
+}
+
 .border-content {
   border: 2px solid #228B22;
   ;

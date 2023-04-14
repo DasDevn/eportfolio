@@ -17,10 +17,16 @@ Description: Layout design mainly for the resume page
 }
 .reContactInfo { grid-area: reContactInfo; }
 .reContactInfo li{
-  font-size: .8em;
+  font-size: 1 px;
+  color: #228B22;;
 }
 .reContactInfo ul{
   padding-top: 20%;
+}
+
+.reAbout{
+  color: #228B22;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -36,7 +42,7 @@ Description: Layout design mainly for the resume page
     'reHeading reHeading reContactInfo'
     'reAbout reAbout reAbout'
     'reEducation reEducation reExpertise'
-    'reExperience reExperience reCertification';
+    'reExperience reExperience reExperience';
   gap: 10px;
   background-color: white;
   padding: 10px;
@@ -51,7 +57,7 @@ Description: Layout design mainly for the resume page
   text-align: left;
   padding: 20px 0;
   font-size: 30px;
-  border-bottom: 1px dotted #666666;
+  border-bottom: 1px dotted #228B22;
   width: 80%;
   margin-left: 5%;
 }ertification { grid-area: footer; }
@@ -72,5 +78,5 @@ Description: Layout design mainly for the resume page
   background-color: white;
   text-align: left;
   padding: 30px 0;
-  font-size: 20px;
+  font-size: 10px;
 }
