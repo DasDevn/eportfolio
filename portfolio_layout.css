@@ -15,14 +15,8 @@ Description: Layout design mainly for the resume page
 .reHeading h4{
   font-weight: normal;  
 }
-.reContactInfo { grid-area: reContactInfo; }
-.reContactInfo li{
-  font-size: 1 px;
-  color: #228B22;;
-}
-.reContactInfo ul{
-  padding-top: 20%;
-}
+
+
 
 .reAbout{
   color: #228B22;
@@ -78,5 +72,5 @@ Description: Layout design mainly for the resume page
   background-color: white;
   text-align: left;
   padding: 30px 0;
-  font-size: 10px;
+  font-size: 15px;
 }
